@@ -23,13 +23,13 @@
         <article class="container">
             <h2 class="mt-4 mb-3 h1">Ma citation</h2>
             <div class="card mx-5">
-                <div class="card-header">
-                    Thème
+                <div class="card-header text-center">
+                    <span id="theme" class="text-capitalize"></span>
                 </div>
                 <div class="card-body text-end">
                     <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus deleniti, delectus voluptas modi quisquam possimus vitae a. Eveniet, atque. Error eius sequi repellendus assumenda itaque, maiores soluta eos aspernatur.</p>
-                        <footer class="blockquote-footer mt-3">Auteur, in <cite title="Source Title">Source</cite></footer>
+                        <p id="content"></p>
+                        <footer class="blockquote-footer mt-3" id="author"></footer>
                       </blockquote>
                 </div>
               </div>
@@ -39,16 +39,12 @@
             <h2 class="h3">Générer une nouvelle citation</h2>
             <form action="" method="GET" class="mt-4">
                 <div class="mb-3">
-                    <select class="form-select" aria-label="Choisir un thème">
-                        <option value="0" selected>Choisir un thème</option>
-                        <option value="1">Amour</option>
+                    <label for="select">Choisir un thème</label>
+                    <select class="form-select" aria-label="Choisir un thème" id="select">
+                        <option value="0" selected>un theme au hasard</option>
                     </select>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="random">
-                    <label class="form-check-label" for="random">Obtenir une citation aléatoire</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn btn-primary" id="submit">Obtenir une citation</button>
               </form>
         </article>
     </main>
